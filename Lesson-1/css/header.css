@@ -1,0 +1,134 @@
+.header {
+    background: url(/img/icon/full-screen.png);
+    min-height: 100vh;
+    padding-top: 38px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c6cacc;
+    padding-bottom: 38px;
+}
+
+.header-icon {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-content {
+    display: flex;
+}
+
+.list-content__link {
+    text-decoration: none;
+    opacity: 0.75;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 60px;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-main__title {
+    color: #ffffff;
+    font-family: "Open Sans";
+    padding-top: 130px;
+    padding-bottom: 41px;
+    font-weight: 700;
+    line-height: 71px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: calc(29px + 36*(100vw / 1170));
+}
+
+.header-main__text {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    padding-bottom: 71px;
+}
+
+.header__button {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-family: "Raleway - Semi Bold";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    background-color: #e84545;
+    width: 200px;
+    height: 46px;
+    text-align: center;
+}
+
+.header__button:hover {
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    padding: 9px 2px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+.burger__item:before, .burger__item:after {
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.burger__item:before {
+    width: 30px;
+    top: -8px;
+}
+
+.burger__item:after {
+    width: 26px;
+    bottom: -8px;
+}
+
+@media (max-width: 991px) {
+    .list {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}

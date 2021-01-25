@@ -1,0 +1,29 @@
+@import url('/css/header.css');
+@import url('/css/work.css');
+@import url('/css/portfolio.css');
+@import url('/css/workers.css');
+@import url('/css/testimonials.css');
+@import url('/css/download.css');
+@import url('/css/footer.css');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
